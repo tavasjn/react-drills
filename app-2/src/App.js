@@ -1,30 +1,19 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Hooks from './Components/Hooks';
+
+
 
 class App extends Component {
 
-
-  constructor(){
-    super();
-
-    this.state = {
-      dinner: [
-        'pizza',
-        'salad',
-        'Dr.pepper',
-        'pineapple'
-      ]
-    }
-  }
 
 
   render() {
     return (
       <div className="App">
-        {this.state.dinner.map((element) => (
-          <h2>{element}</h2>
-        ))}
+        <h2>Hooks</h2>
+        <Hooks />
       </div>
     );
   }
